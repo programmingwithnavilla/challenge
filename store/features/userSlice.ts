@@ -27,7 +27,7 @@ const userSlice = createSlice({
     characterInfo: intialState,
   },
   reducers: {
-    setUser(state: any, action: PayloadAction<IUser>) {
+    addUser(state: any, action: PayloadAction<IUser>) {
       state.users.unshift(action.payload);
     },
     removeUser(state: any, action: PayloadAction<IUser>) {
@@ -39,7 +39,7 @@ const userSlice = createSlice({
   },
 });
 
-export const { setUser, removeUser } = userSlice.actions;
+export const { addUser, removeUser } = userSlice.actions;
 export const selectCharacter = (state: any) => state.character;
 
 export default userSlice.reducer;
