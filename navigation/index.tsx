@@ -20,7 +20,6 @@ import ModalScreen from "../screens/ModalScreen";
 import NotFoundScreen from "../screens/NotFoundScreen";
 import TabOneScreen from "../screens/TabOneScreen";
 import TabTwoScreen from "../screens/TabTwoScreen";
-import Gallery from "../screens/Gallery";
 import Users from "../screens/users";
 import UserDetail from "../screens/userDetail";
 
@@ -58,7 +57,6 @@ function RootNavigator() {
       <Stack.Screen name="Users" component={Users} />
       <Stack.Screen name="UserDetail" component={UserDetail} />
 
-      <Stack.Screen name="Gallery" component={Gallery} />
       <Stack.Screen
         name="NotFound"
         component={NotFoundScreen}
